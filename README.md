@@ -10,4 +10,4 @@ NATIONAL INSTITUTE FOR SPACE RESEARCH. EARTH OBSERVATION GENERAL COORDINATION. M
 
 [Link to interactive report](https://app.powerbi.com/view?r=eyJrIjoiNzAwMjFmYjQtZDUwYi00NGZmLWFiOWMtYTI1NDBiOWQ3MTA4IiwidCI6ImRjMWYwNGY1LWMxZTUtNDQyOS1hODEyLTU3OTNiZTQ1YmY5ZCIsImMiOjEwfQ%3D%3D)
 
-[![View and interact with the report in full-screen](https://github.com/Mike-Honey/Brazil-Deforestation-DETER/raw/master/Brazil-Deforestation-DETER.png)](https://app.powerbi.com/view?r=eyJrIjoiNzAwMjFmYjQtZDUwYi00NGZmLWFiOWMtYTI1NDBiOWQ3MTA4IiwidCI6ImRjMWYwNGY1LWMxZTUtNDQyOS1hODEyLTU3OTNiZTQ1YmY5ZCIsImMiOjEwfQ%3D%3D)
+[![View and interact with the report in full-screen](https://github.com/Mike-Honey/Brazil-Deforestation-DETER/raw/master/Brazil-Deforestation-DETER.PNG)](https://app.powerbi.com/view?r=eyJrIjoiNzAwMjFmYjQtZDUwYi00NGZmLWFiOWMtYTI1NDBiOWQ3MTA4IiwidCI6ImRjMWYwNGY1LWMxZTUtNDQyOS1hODEyLTU3OTNiZTQ1YmY5ZCIsImMiOjEwfQ%3D%3D)
