@@ -1,4 +1,8 @@
+import geopandas
+import numpy
 import os
+import pandas_profiling
+
 from urllib import request, parse
 import zipfile
 import shapefile
@@ -201,6 +205,23 @@ def getunzipped(theurl, thedir):
   #os.unlink(name)
 
 
+def shape_process(filename, outfilename, VIEW_DATE_prefix):
+  """
+  When the zip is downloaded and extracted, filter for year and process.
+  """
+  input_gdf = geopandas.read_file(filename, encoding="utf-8")
+  print (input_gdf)
+  # profile = pandas_profiling.ProfileReport(input_gdf.drop('geometry',axis=1))
+  # profile.to_file(filename + ".html")
+  input_gdf_year = input_gdf[input_gdf['VIEW_DATE'].str.startswith(VIEW_DATE_prefix)]
+  input_gdf_year['ROW_NUMBER'] = numpy.arange(len(input_gdf_year))
+  print (input_gdf_year)
+  output_gdf_year_wgs84 = input_gdf_year.to_crs('epsg:4326')
+  filename_out = outfilename + "-" + VIEW_DATE_prefix + ".geojson"
+  output_gdf_year_wgs84.to_file(filename_out, driver='GeoJSON', encoding="utf-8")
+  print("shape_process - Wrote file: " + filename_out)
+
+
 def main():
   """
   Main - program execute
@@ -208,14 +229,13 @@ def main():
 
   #datadir = '../data/'
   datadir = './'
-  #getunzipped('http://terrabrasilis.dpi.inpe.br/download/deter-amz/deter-amz_all.zip', datadir) 
   # getunzipped('http://terrabrasilis.dpi.inpe.br/file-delivery/download/deter-amz/shape', datadir) 
  
-  #shapeaddrownumber(datadir + 'deter_all.shp')
   # shapeaddrownumber(datadir + 'deter_public.shp', datadir + 'deter_all.shp' )
+  shape_process(datadir + 'deter_public.shp', datadir + 'deter_all.shp', '2020' )
   
   # Command line to run:
-  # "C:/cygwin64/home/mikehoney/tippecanoe/tippecanoe" -o "C:/dev/INPE/DETER/deter-amz.mbtiles" -f -Z 0 -z 9 "C:/dev/INPE/DETER/deter_all.shp-Last 3m.geojson"
+  # "C:/cygwin64/home/mikehoney/tippecanoe/tippecanoe" -o "C:/dev/INPE/DETER/deter-amz.mbtiles" -f -Z 0 -z 9 "C:/dev/INPE/DETER/deter_all.shp-2020.geojson"
   subprocess.call ('C://cygwin64//home//mikehoney//tippecanoe//tippecanoe -o C://dev//INPE//DETER//deter-amz.mbtiles -f -Z 0 -z 9 C://dev//INPE//DETER//deter_all.shp-2020.geojson' , shell=True)
 
   #uploadToMapbox(datadir)
