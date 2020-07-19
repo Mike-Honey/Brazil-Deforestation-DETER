@@ -229,13 +229,15 @@ def main():
 
   #datadir = '../data/'
   datadir = './'
-  # getunzipped('http://terrabrasilis.dpi.inpe.br/file-delivery/download/deter-amz/shape', datadir) 
+  getunzipped('http://terrabrasilis.dpi.inpe.br/file-delivery/download/deter-amz/shape', datadir) 
  
   # shapeaddrownumber(datadir + 'deter_public.shp', datadir + 'deter_all.shp' )
+  # shape_process(datadir + 'deter_public.shp', datadir + 'deter_all.shp', '2019' )
   shape_process(datadir + 'deter_public.shp', datadir + 'deter_all.shp', '2020' )
   
   # Command line to run:
   # "C:/cygwin64/home/mikehoney/tippecanoe/tippecanoe" -o "C:/dev/INPE/DETER/deter-amz.mbtiles" -f -Z 0 -z 9 "C:/dev/INPE/DETER/deter_all.shp-2020.geojson"
+  # subprocess.call ('C://cygwin64//home//mikehoney//tippecanoe//tippecanoe -o C://dev//INPE//DETER//deter-amz-2019.mbtiles -f -Z 0 -z 9 C://dev//INPE//DETER//deter_all.shp-2019.geojson' , shell=True)
   subprocess.call ('C://cygwin64//home//mikehoney//tippecanoe//tippecanoe -o C://dev//INPE//DETER//deter-amz.mbtiles -f -Z 0 -z 9 C://dev//INPE//DETER//deter_all.shp-2020.geojson' , shell=True)
 
   #uploadToMapbox(datadir)
