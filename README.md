@@ -1,5 +1,7 @@
 # Brazil-Deforestation-DETER
 
+[Link to interactive report](https://app.powerbi.com/view?r=eyJrIjoiNzAwMjFmYjQtZDUwYi00NGZmLWFiOWMtYTI1NDBiOWQ3MTA4IiwidCI6ImRjMWYwNGY1LWMxZTUtNDQyOS1hODEyLTU3OTNiZTQ1YmY5ZCIsImMiOjEwfQ%3D%3D)
+
 This report shows data on recent deforestation in Brazil, with visuals including categorisation of the deforestation and it's location, a map of the affected areas, and a timeline. 
 
 The data was extracted from the "Notices - Legal Amazon" data provided by INPE: http://terrabrasilis.dpi.inpe.br/en/download-2/
@@ -8,8 +10,9 @@ Data from July 2019 onwards is shown in this report. The data is visualised over
 
 NATIONAL INSTITUTE FOR SPACE RESEARCH. EARTH OBSERVATION GENERAL COORDINATION. MONITORING PROGRAM OF THE AMAZON AND OTHER BIOMES. Deforestation – Legal Amazon – Available at http://terrabrasilis.dpi.inpe.br/downloads/. 
 
-[Link to interactive report](https://app.powerbi.com/view?r=eyJrIjoiNzAwMjFmYjQtZDUwYi00NGZmLWFiOWMtYTI1NDBiOWQ3MTA4IiwidCI6ImRjMWYwNGY1LWMxZTUtNDQyOS1hODEyLTU3OTNiZTQ1YmY5ZCIsImMiOjEwfQ%3D%3D)
 
 [Introductory video (2:44)](https://www.youtube.com/watch?v=eyw_DWAOu6I)
 
 [![View and interact with the report in full-screen](https://github.com/Mike-Honey/Brazil-Deforestation-DETER/raw/master/Brazil-Deforestation-DETER.PNG)](https://app.powerbi.com/view?r=eyJrIjoiNzAwMjFmYjQtZDUwYi00NGZmLWFiOWMtYTI1NDBiOWQ3MTA4IiwidCI6ImRjMWYwNGY1LWMxZTUtNDQyOS1hODEyLTU3OTNiZTQ1YmY5ZCIsImMiOjEwfQ%3D%3D)
+
+[Link to interactive report](https://app.powerbi.com/view?r=eyJrIjoiNzAwMjFmYjQtZDUwYi00NGZmLWFiOWMtYTI1NDBiOWQ3MTA4IiwidCI6ImRjMWYwNGY1LWMxZTUtNDQyOS1hODEyLTU3OTNiZTQ1YmY5ZCIsImMiOjEwfQ%3D%3D)
